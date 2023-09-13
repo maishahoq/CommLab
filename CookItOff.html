@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cook It Off</title>
+    <!-- My CSS links here -->
+    <!--<link rel="stylesheet" href="CommLab/style.css">-->
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <!-- Additional styles or libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo-wrapper">
+            <img src="websiteLogo.png" alt="Logo" class="logo">
+            <div class="header-name">Cook It Off</div>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button><i class="fa fa-search"></i></button>
+        </div>
+        <nav>
+            <button id="home-button">Home</button>
+            <div class="dropdown">
+                <button id="categories-button">Categories</button>
+                <div class="dropdown-content">
+                    <a href="#breakfast">Breakfast</a>
+                    <a href="#main-course">Main Course</a>
+                    <a href="#savory-snacks">Savory Snacks</a>
+                    <a href="#desserts">Desserts</a>
+                </div>
+            </div>
+            <button id="about-us-button">About Us</button>
+        </nav>
+    </header>
+    <!-- Add your JavaScript links or scripts here -->
+    <script src="script.js"></script>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="video-container">
+            <!-- Embed your YouTube video here -->
+        </div>
+        <div class="welcome">
+            <h1>Welcome to Cook It Off</h1>
+            <p>Welcome to our cooking video platform. Explore delicious recipes!</p>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories">
+        <h2>Categories</h2>
+        <div class="category">
+            <h3>Breakfast</h3>
+            <!-- Horizontal video list for Breakfast -->
+        </div>
+        <div class="category">
+            <h3>Main Course</h3>
+            <!-- Horizontal video list for Main Course -->
+        </div>
+        <div class="category">
+            <h3>Savory Snacks</h3>
+            <!-- Horizontal video list for Savory Snacks -->
+        </div>
+        <div class="category">
+            <h3>Desserts</h3>
+            <!-- Horizontal video list for Desserts -->
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us">
+        <h2>About Us</h2>
+        <div class="member-frame">
+            <img src="data:image/jpeg;base64,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" alt="Member 1">
+            <h3>Maisha Mahrin</h3>
+            <p>Major: Computer Science</p>
+            <p>Class: 2024</p>
+        </div>
+        <!-- Repeat the member frames for other team members -->
+        <div class="description">
+            <p>Why we built this platform...</p>
+            <p>Ideas from the team...</p>
+            <p>Messages from the developers...</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <a href="terms-and-conditions.html">Terms and Conditions</a>
+        <p>&copy; 2023 Cook It Off</p>
+    </footer>
+
+    
+</body>
+
+</html>

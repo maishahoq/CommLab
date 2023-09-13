@@ -1,0 +1,84 @@
+/* Apply general styles to header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(155, 28, 28); /* Adjust background color */
+    color: white;  /* Text color */
+    padding: 10px 20px; /* Add padding to header */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Style the logo wrapper */
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/* Style the logo */
+.logo {
+    width: 50px;
+    /* Set the logo width to make it square */
+    height: auto;
+    /* Let the height adjust proportionally */
+    margin-right: 10px;  /* will add spacing between logo and header name */
+}
+
+/* Style the header name */
+.header-name {
+    font-size: 24px;
+    /* Adjust font size */
+    font-weight: bold;
+}
+
+/* Style the search bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    /* Add spacing between input and button */
+}
+
+/* Style navigation buttons */
+nav button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    /* Adjust font size */
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-right: 10px;
+    /* Add spacing between buttons */
+}
+
+/* Style the dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    /* Adjust dropdown background color */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+/* Show the dropdown content when hovering over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
