@@ -1,1 +1,62 @@
+body {
+    text-align: center;/* Center-align all text and inline elements */
+    margin:0;
+    padding:0;
+}
 
+/* Add spacing between sections */
+#home {
+    text-align: center;
+    margin-top: 20px;
+    margin: 0 auto; /* Center the content horizontally */
+}
+.welcome-title{
+    font-size: 50px;
+}
+.welcome-message {
+    font-size: 18px;
+    text-align: center; /* Align text to the left within the content section */
+    max-width: 80%;
+        /* Set a maximum width for content readability */
+        margin: 0 auto;
+        /* Center the content horizontally */
+    
+}
+
+/* Create a two-column layout within the home section */
+.two-columns {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    /* Adjust the gap between columns as needed */
+}
+/* Style columns within the two-column layout */
+.column {
+    flex: 1;
+}
+.video-container {
+    margin-top: 2rem;
+    margin-left: auto;
+    /* Center the container horizontally */
+    margin-right: auto;
+    /* Center the container horizontally */
+    width: 100%;
+    /* Set the width to 100% of the screen width */
+}
+
+/* Style list items within ordered list */
+ol li {
+    margin: 10px 0; /* Add margin to list items for spacing */
+}
+
+/* Style strong elements within list items */
+li strong {
+    font-weight: bold; /* Make strong elements bold */
+    color: #000; /* Text color for strong elements */
+}
+
+#about-us {
+    text-align: center;
+    margin-top: 20px;
+    
+}
