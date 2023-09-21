@@ -10,6 +10,9 @@ body {
     margin-top: 20px;
     margin: 0 auto; /* Center the content horizontally */
 }
+.welcome{
+    margin-top: 20px;
+}
 .welcome-title{
     font-size: 50px;
 }
@@ -17,9 +20,9 @@ body {
     font-size: 18px;
     text-align: center; /* Align text to the left within the content section */
     max-width: 80%;
-        /* Set a maximum width for content readability */
-        margin: 0 auto;
-        /* Center the content horizontally */
+    /* Set a maximum width for content readability */
+    margin: 0 auto;
+    /* Center the content horizontally */
     
 }
 
