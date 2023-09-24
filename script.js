@@ -19,55 +19,30 @@ window.addEventListener("click", function (event) {
   }
 });
 
-//JavaScript for Categories section
+//Search bar
 
-// JavaScript for horizontal video carousel
-// document.querySelectorAll(".category").forEach(function (category) {
-//   const videoCarousel = category.querySelector(".video-carousel");
-//   const videoItems = videoCarousel.querySelectorAll(".video-item");
-//   let scrollPosition = 0;
-//   const itemWidth = videoItems[0].offsetWidth;
+document.addEventListener("DOMContentLoaded", function () {
+  const searchInput = document.getElementById("search-input");
+  const searchButton = document.getElementById("search-button");
 
-//   /*// Show or hide carousel buttons based on scroll position
-//     function toggleCarouselButtons() {
-//         const leftButton = category.querySelector(".carousel-button.left");
-//         const rightButton = category.querySelector(".carousel-button.right");
+  searchButton.addEventListener("click", function () {
+    const searchTerm = searchInput.value.trim();
 
-//         leftButton.style.display = scrollPosition > 0 ? "block" : "none";
-//         rightButton.style.display = scrollPosition < videoItems.length - 1 ? "block" : "none";
-//     }*/
+    // Perform your search logic here (replace the alert with your actual search code)
+    if (searchTerm !== "") {
+      alert("Perform search with term: " + searchTerm);
+    } else {
+      alert("Please enter a search term.");
+    }
+  });
 
-//   // Handle left arrow button click
-//   category
-//     .querySelector(".carousel-button.left")
-//     .addEventListener("click", function () {
-//       if (scrollPosition > 0) {
-//         scrollPosition--;
-//         videoCarousel.scrollTo({
-//           left: scrollPosition * itemWidth,
-//           behavior: "smooth",
-//         });
-//         toggleCarouselButtons();
-//       }
-//     });
-
-//   // Handle right arrow button click
-//   category
-//     .querySelector(".carousel-button.right")
-//     .addEventListener("click", function () {
-//       if (scrollPosition < videoItems.length - 1) {
-//         scrollPosition++;
-//         videoCarousel.scrollTo({
-//           left: scrollPosition * itemWidth,
-//           behavior: "smooth",
-//         });
-//         toggleCarouselButtons();
-//       }
-//     });
-
-//   // Initialize button visibility
-//   toggleCarouselButtons();
-// });
+  // Optionally, you can add support for pressing Enter to search
+  searchInput.addEventListener("keyup", function (event) {
+    if (event.key === "Enter") {
+      searchButton.click();
+    }
+  });
+});
 
 /*phtoto carousal feature inspired from the following website: https: //www.codingnepalweb.com/responsive-image-slider-html-css-javascript/*/
 

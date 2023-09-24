@@ -22,10 +22,11 @@
             <img src="websiteLogo.png" alt="Logo" class="logo">
             <div class="header-name">Cook It Off</div>
         </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search...">
-            <button><i class="fa fa-search"></i></button>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button id="search-button">Search</button>
         </div>
+
         <nav>
             <a href="#home">Home</a>
             <div class="dropdown">
@@ -50,49 +51,53 @@
     <!-- Home Section -->
     <section id="home">
         <div class="video-container">
-            <iframe width="900"    
-                height="450"
-                src="https://www.youtube.com/embed/LrJd4gHCaCU"
-                frameborder="0"
-                allowfullscreen
-            ></iframe>
+            <iframe width="900" height="450" src="https://www.youtube.com/embed/LrJd4gHCaCU" frameborder="0"
+                allowfullscreen></iframe>
         </div>
         <div class="welcome">
             <p> Are you also burning your kitchen down back and forth? If yes, welcome to </p>
             <h1 class="welcome-title">Cook It Off</h1>
             <section class="welcome-message">
-                    <div class="two-columns">
-                        <div class="column">
-                            <p>Are you tired of those panicked calls to Mom, the smoke alarms blaring in the background, and the fear of
-                                burning
-                                the house down while attempting to whip up a meal? Well, fear not, because you've just stumbled upon your
-                                culinary safe haven!</p>
-                            <p>     </p>
-                            <p>At Cook It Off, we understand the struggle of the millennial generation when it comes to cooking.
-                                Whether it's breakfast, main courses, savory snacks, or desserts, we've got you covered.</p>
-                            <p>      </p>
-                            <p>Our meticulously curated collection of cooking videos is your passport to kitchen mastery.</p>
-                        </div>
-                        <div class="column">
-                            <h4>Here's What We Offer:</h4>
-                            <ul>
-                                <li><strong>Breakfast Bliss:</strong> From fluffy pancakes to hearty omelets and energizing smoothie bowls, you'll be starting your day right.</li>
-                                <li><strong>Mouthwatering Main Courses:</strong> Pasta perfection, sizzling
-                                    stir-fries,or succulent roasts, our main course section will turn you into a home chef extraordinaire.</li>
-                                <li><strong>Savory Snack Attack:</strong> Our snack recipes range from crispy fries
-                                    to savory bites, ensuring you're never caught hangry again.</li>
-                                <li><strong>Divine Desserts:</strong> Sweet tooth acting up? Indulge in our heavenly dessert creations.</li>
-                            </ul>
-                        </div>
+                <div class="two-columns">
+                    <div class="column">
+                        <p>Are you tired of those panicked calls to Mom, the smoke alarms blaring in the background, and
+                            the fear of
+                            burning
+                            the house down while attempting to whip up a meal? Well, fear not, because you've just
+                            stumbled upon your
+                            culinary safe haven!</p>
+                        <p> </p>
+                        <p>At Cook It Off, we understand the struggle of the millennial generation when it comes to
+                            cooking.
+                            Whether it's breakfast, main courses, savory snacks, or desserts, we've got you covered.</p>
+                        <p> </p>
+                        <p>Our meticulously curated collection of cooking videos is your passport to kitchen mastery.
+                        </p>
                     </div>
-                    
-                    <p>It's time to grab that apron, hit play on our cooking videos, and embark on a culinary journey like no other. Happy
-                        cooking!</p>
+                    <div class="column">
+                        <h4>Here's What We Offer:</h4>
+                        <ul>
+                            <li><strong>Breakfast Bliss:</strong> From fluffy pancakes to hearty omelets and energizing
+                                smoothie bowls, you'll be starting your day right.</li>
+                            <li><strong>Mouthwatering Main Courses:</strong> Pasta perfection, sizzling
+                                stir-fries,or succulent roasts, our main course section will turn you into a home chef
+                                extraordinaire.</li>
+                            <li><strong>Savory Snack Attack:</strong> Our snack recipes range from crispy fries
+                                to savory bites, ensuring you're never caught hangry again.</li>
+                            <li><strong>Divine Desserts:</strong> Sweet tooth acting up? Indulge in our heavenly dessert
+                                creations.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p>It's time to grab that apron, hit play on our cooking videos, and embark on a culinary journey like
+                    no other. Happy
+                    cooking!</p>
             </section>
 
 
-            </section>
-        </div>
+    </section>
+    </div>
     </section>
 
 
@@ -105,28 +110,33 @@
                 <div class="container">
                     <div class="slider-wrapper">
                         <button id="prev-slide" class="slide-button material-symbols-rounded">
-                            <-
-                        </button>
-                        <ul class="image-list">
-                            <!-- Horizontal video list for Main Course -->
-                            <iframe class="video-item" width="560" height="315" src="https://www.youtube.com/embed/fvuHXumNbus?rel=0"
-                                frameborder="0" allowfullscreen></iframe>
-                            <iframe class="video-item" width="560" height="315" src="https://www.youtube.com/embed/8PLiU2Iu6Oc?rel=0"
-                                frameborder="0" allowfullscreen></iframe>
-                            <iframe class="video-item" width="560" height="315" src="https://www.youtube.com/embed/D_ZVX0e4gdg?rel=0"
-                                frameborder="0" allowfullscreen></iframe>
-                            <iframe class="video-item" width="560" height="315" src="https://www.youtube.com/embed/pwFDccjdW_M?si=G-BKfPUWI0d3malv"
-                                frameborder="0" allowfullscreen></iframe>
-                            <iframe class="video-item" width="560" height="315" src="https://www.youtube.com/embed/pwFDccjdW_M?si=G-BKfPUWI0d3malv"
-                                frameborder="0" allowfullscreen></iframe>
-                            <iframe class="video-item" width="560" height="315" src="https://www.youtube.com/embed/pwFDccjdW_M?si=G-BKfPUWI0d3malv"
-                                frameborder="0" allowfullscreen></iframe>
+                            <- </button>
+                                <ul class="image-list">
+                                    <!-- Horizontal video list for Main Course -->
+                                    <iframe class="video-item" width="560" height="315"
+                                        src="https://www.youtube.com/embed/fvuHXumNbus?rel=0" frameborder="0"
+                                        allowfullscreen></iframe>
+                                    <iframe class="video-item" width="560" height="315"
+                                        src="https://www.youtube.com/embed/8PLiU2Iu6Oc?rel=0" frameborder="0"
+                                        allowfullscreen></iframe>
+                                    <iframe class="video-item" width="560" height="315"
+                                        src="https://www.youtube.com/embed/D_ZVX0e4gdg?rel=0" frameborder="0"
+                                        allowfullscreen></iframe>
+                                    <iframe class="video-item" width="560" height="315"
+                                        src="https://www.youtube.com/embed/pwFDccjdW_M?si=G-BKfPUWI0d3malv"
+                                        frameborder="0" allowfullscreen></iframe>
+                                    <iframe class="video-item" width="560" height="315"
+                                        src="https://www.youtube.com/embed/pwFDccjdW_M?si=G-BKfPUWI0d3malv"
+                                        frameborder="0" allowfullscreen></iframe>
+                                    <iframe class="video-item" width="560" height="315"
+                                        src="https://www.youtube.com/embed/pwFDccjdW_M?si=G-BKfPUWI0d3malv"
+                                        frameborder="0" allowfullscreen></iframe>
 
-                           
-                        </ul>
-                        <button id="next-slide" class="slide-button material-symbols-rounded">
-                            ->
-                        </button>
+
+                                </ul>
+                                <button id="next-slide" class="slide-button material-symbols-rounded">
+                                    ->
+                                </button>
                     </div>
                     <div class="slider-scrollbar">
                         <div class="scrollbar-track">
@@ -134,57 +144,134 @@
                         </div>
                     </div>
                 </div>
-            
+
             </div>
-            </div>
-            
+
         </div>
         <div class="category" id="main-course">
             <h3>Main Course</h3>
             <div class="video-carousel">
-                    <div class="container">
-                        <div class="slider-wrapper">
-                            <button id="prev-slide" class="slide-button material-symbols-rounded">
-                                <-
-                            </button>
-                            <ul class="image-list">
-                                <!-- Horizontal video list for Main Course -->
-                                <iframe class="video-item" width="560" height="315" src="https://www.youtube.com/embed/lehiZMGu2yw?si=f_5-Ti0r_crydFqT"
-                                    frameborder="0" allowfullscreen></iframe>
-                                <iframe class="video-item" width="560" height="315" src="https://www.youtube.com/embed/UIOW18kRDEA?si=t_NZfCK0-VaAL7cS"
-                                    frameborder="0" allowfullscreen></iframe>
-                                <iframe class="video-item" width="560" height="315"
-                                    src="https://www.youtube.com/embed/aMDV2tfY9rM?si=8f1dXONnIb_mdN9m" frameborder="0" allowfullscreen></iframe>
-                                <iframe class="video-item" width="560" height="315" src="https://www.youtube.com/embed/WprwPtvNp0o?si=6qh7A_MM3YIL0aDq"
-                                    frameborder="0" allowfullscreen></iframe>
-                                <iframe class="video-item" width="560" height="315" src="https://www.youtube.com/embed/Kes2fk-Nuwo?si=3N84OYFHY-0EaQfW"
-                                    frameborder="0" allowfullscreen></iframe>
-                                <iframe class="video-item" width="560" height="315" src="https://www.youtube.com/embed/Kes2fk-Nuwo?si=3N84OYFHY-0EaQfW"
-                                    frameborder="0" allowfullscreen></iframe>
-                            </ul>
-                            <button id="next-slide" class="slide-button material-symbols-rounded">
-                                ->
-                            </button>
-                        </div>
-                        <div class="slider-scrollbar">
-                            <div class="scrollbar-track">
-                                <div class="scrollbar-thumb"></div>
-                            </div>
+                <div class="container">
+                    <div class="slider-wrapper">
+                        <button id="prev-slide" class="slide-button material-symbols-rounded">
+                            <- </button>
+                                <ul class="image-list">
+                                    <!-- Horizontal video list for Main Course -->
+                                    <iframe class="video-item" width="560" height="315"
+                                        src="https://www.youtube.com/embed/lehiZMGu2yw?si=f_5-Ti0r_crydFqT"
+                                        frameborder="0" allowfullscreen></iframe>
+                                    <iframe class="video-item" width="560" height="315"
+                                        src="https://www.youtube.com/embed/UIOW18kRDEA?si=t_NZfCK0-VaAL7cS"
+                                        frameborder="0" allowfullscreen></iframe>
+                                    <iframe class="video-item" width="560" height="315"
+                                        src="https://www.youtube.com/embed/aMDV2tfY9rM?si=8f1dXONnIb_mdN9m"
+                                        frameborder="0" allowfullscreen></iframe>
+                                    <iframe class="video-item" width="560" height="315"
+                                        src="https://www.youtube.com/embed/WprwPtvNp0o?si=6qh7A_MM3YIL0aDq"
+                                        frameborder="0" allowfullscreen></iframe>
+                                    <iframe class="video-item" width="560" height="315"
+                                        src="https://www.youtube.com/embed/Kes2fk-Nuwo?si=3N84OYFHY-0EaQfW"
+                                        frameborder="0" allowfullscreen></iframe>
+                                    <iframe class="video-item" width="560" height="315"
+                                        src="https://www.youtube.com/embed/Kes2fk-Nuwo?si=3N84OYFHY-0EaQfW"
+                                        frameborder="0" allowfullscreen></iframe>
+                                </ul>
+                                <button id="next-slide" class="slide-button material-symbols-rounded">
+                                    ->
+                                </button>
+                    </div>
+                    <div class="slider-scrollbar">
+                        <div class="scrollbar-track">
+                            <div class="scrollbar-thumb"></div>
                         </div>
                     </div>
+                </div>
 
             </div>
         </div>
         <div class="category" id="savory-snacks">
             <h3>Savory Snacks</h3>
             <div class="video-carousel">
-                <!-- Horizontal video list for Savory Snacks -->
+                <div class="container">
+                    <div class="slider-wrapper">
+                        <button id="prev-slide" class="slide-button material-symbols-rounded">
+                            <- </button>
+                                <ul class="image-list">
+                                    <!-- Horizontal video list for Main Course -->
+                                    <iframe class="video-item" width="560" height="315"
+                                        src="https://www.youtube.com/embed/YO3y2M8AMsc?si=hvcWzj2soaP19zfA"
+                                        frameborder="0" allowfullscreen></iframe>
+                                    <iframe class="video-item" width="560" height="315"
+                                        src="https://www.youtube.com/embed/EN5ScisdNmg?si=CS3EtKufwO-jcDM5"
+                                        frameborder="0" allowfullscreen></iframe>
+                                    <iframe class="video-item" width="560" height="315"
+                                        src="https://www.youtube.com/embed/ZusYJm5xHkg?si=SXoa-_RnoYsqEUGe"
+                                        frameborder="0" allowfullscreen></iframe>
+                                    <iframe class="video-item" width="560" height="315"
+                                        src="https://www.youtube.com/embed/lHOmgNapV78?si=aUnMeEqoYz17tqoY"
+                                        frameborder="0" allowfullscreen></iframe>
+                                    <iframe class="video-item" width="560" height="315"
+                                        src="https://www.youtube.com/embed/1KUYof2EEmw?si=3fsqVqZt4mvXGT3-"
+                                        frameborder="0" allowfullscreen></iframe>
+                                    <iframe class="video-item" width="560" height="315"
+                                        src="https://www.youtube.com/embed/ITkNZ-Hssns?si=h7t_3IJi8vTCXABb"
+                                        frameborder="0" allowfullscreen></iframe>
+
+
+                                </ul>
+                                <button id="next-slide" class="slide-button material-symbols-rounded">
+                                    ->
+                                </button>
+                    </div>
+                    <div class="slider-scrollbar">
+                        <div class="scrollbar-track">
+                            <div class="scrollbar-thumb"></div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
         <div class="category" id="desserts">
             <h3>Desserts</h3>
             <div class="video-carousel">
-                <!-- Horizontal video list for Desserts -->
+                <div class="container">
+                    <div class="slider-wrapper">
+                        <button id="prev-slide" class="slide-button material-symbols-rounded">
+                            <- </button>
+                                <ul class="image-list">
+                                    <!-- Horizontal video list for Main Course -->
+                                    <iframe class="video-item" width="560" height="315"
+                                        src="https://www.youtube.com/embed/03_EDK9Sn_E?si=lrJPpWdoRJV73JER"
+                                        frameborder="0" allowfullscreen></iframe>
+                                    <iframe class="video-item" width="560" height="315"
+                                        src="https://www.youtube.com/embed/vtwX4aFMiK8?si=u9-ZkvbQ7T4TdQIh"
+                                        frameborder="0" allowfullscreen></iframe>
+                                    <iframe class="video-item" width="560" height="315"
+                                        src="https://www.youtube.com/embed/6GaRr_v4y9A?si=RP47Vu_vkl60ycGj"
+                                        frameborder="0" allowfullscreen></iframe>
+                                    <iframe class="video-item" width="560" height="315"
+                                        src="https://www.youtube.com/embed/dd2V1tsgdVc?si=XbHJbR-x1e3YTJIc"
+                                        frameborder="0" allowfullscreen></iframe>
+                                    <iframe class="video-item" width="560" height="315"
+                                        src="https://www.youtube.com/embed/plwFYzeCqFQ?si=7yzlfMvOprR9OWGd"
+                                        frameborder="0" allowfullscreen></iframe>
+                                    <iframe class="video-item" width="560" height="315"
+                                        src="https://www.youtube.com/embed/JwMmn8Z9exk?si=uVVr8siMko_3oHVr"
+                                        frameborder="0" allowfullscreen></iframe>
+
+
+                                </ul>
+                                <button id="next-slide" class="slide-button material-symbols-rounded">
+                                    ->
+                                </button>
+                    </div>
+                    <div class="slider-scrollbar">
+                        <div class="scrollbar-track">
+                            <div class="scrollbar-thumb"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -195,18 +282,25 @@
     <section id="about-us">
         <h2>About Us</h2>
         <div class="member-frame">
-            <img src="data:image/jpeg;base64,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" alt="Member 1">
+            <img src="data:image/jpeg;base64,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"
+                alt="Member 1">
             <h3>Maisha Mahrin</h3>
             <p>Major: Computer Science</p>
             <p>Class: 2024</p>
         </div>
+
+
         <!-- Repeat the member frames for other team members -->
         <div class="description">
             <p>Why we built this platform...</p>
             <p>Ideas from the team...</p>
             <p>Messages from the developers...</p>
+
         </div>
+
     </section>
+
+
 
     <!-- Footer Section -->
     <footer>
@@ -219,7 +313,7 @@
         <p>&copy; 2023 Cook It Off</p>
     </footer>
 
-    
+
 </body>
 
 </html>
