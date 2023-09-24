@@ -1,5 +1,11 @@
 # CommLab
 
+The starting video of this website, which is used as a promotional video for the website, was filmed, shot, starred, and edited by the following:
+1. Tihn
+2. Hazza
+3. Navid
+4. Maisha
+
 **Class repository for the Common Lab class** for my Interactive Media minor.
 
 **WireFrame for the website:** [Link to Figma Wireframe](https://www.figma.com/proto/JGmBWyeLjwR3sBIRziqhV5/Maisha-IM-HW-Wireframe-30-MFF?type=design&node-id=1-2&t=ItRdUIJIN2yOSgd5-1&scaling=min-zoom&page-id=0%3A1&mode=design)
