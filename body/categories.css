@@ -2,11 +2,15 @@
     text-align: left;
     margin-top: 20px;
     margin-left: 3%;
+    font-size: 26px;
         /* Center the container horizontally */
     margin-right: 3%;
         /* Center the container horizontally */
 }
 
+.categories h2 {
+    font-size: 30px;
+}
 
 /* Style the category sub-sections */
 .category {

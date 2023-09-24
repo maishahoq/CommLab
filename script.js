@@ -22,52 +22,52 @@ window.addEventListener("click", function (event) {
 //JavaScript for Categories section
 
 // JavaScript for horizontal video carousel
-document.querySelectorAll(".category").forEach(function (category) {
-  const videoCarousel = category.querySelector(".video-carousel");
-  const videoItems = videoCarousel.querySelectorAll(".video-item");
-  let scrollPosition = 0;
-  const itemWidth = videoItems[0].offsetWidth;
+// document.querySelectorAll(".category").forEach(function (category) {
+//   const videoCarousel = category.querySelector(".video-carousel");
+//   const videoItems = videoCarousel.querySelectorAll(".video-item");
+//   let scrollPosition = 0;
+//   const itemWidth = videoItems[0].offsetWidth;
 
-  /*// Show or hide carousel buttons based on scroll position
-    function toggleCarouselButtons() {
-        const leftButton = category.querySelector(".carousel-button.left");
-        const rightButton = category.querySelector(".carousel-button.right");
+//   /*// Show or hide carousel buttons based on scroll position
+//     function toggleCarouselButtons() {
+//         const leftButton = category.querySelector(".carousel-button.left");
+//         const rightButton = category.querySelector(".carousel-button.right");
 
-        leftButton.style.display = scrollPosition > 0 ? "block" : "none";
-        rightButton.style.display = scrollPosition < videoItems.length - 1 ? "block" : "none";
-    }*/
+//         leftButton.style.display = scrollPosition > 0 ? "block" : "none";
+//         rightButton.style.display = scrollPosition < videoItems.length - 1 ? "block" : "none";
+//     }*/
 
-  // Handle left arrow button click
-  category
-    .querySelector(".carousel-button.left")
-    .addEventListener("click", function () {
-      if (scrollPosition > 0) {
-        scrollPosition--;
-        videoCarousel.scrollTo({
-          left: scrollPosition * itemWidth,
-          behavior: "smooth",
-        });
-        toggleCarouselButtons();
-      }
-    });
+//   // Handle left arrow button click
+//   category
+//     .querySelector(".carousel-button.left")
+//     .addEventListener("click", function () {
+//       if (scrollPosition > 0) {
+//         scrollPosition--;
+//         videoCarousel.scrollTo({
+//           left: scrollPosition * itemWidth,
+//           behavior: "smooth",
+//         });
+//         toggleCarouselButtons();
+//       }
+//     });
 
-  // Handle right arrow button click
-  category
-    .querySelector(".carousel-button.right")
-    .addEventListener("click", function () {
-      if (scrollPosition < videoItems.length - 1) {
-        scrollPosition++;
-        videoCarousel.scrollTo({
-          left: scrollPosition * itemWidth,
-          behavior: "smooth",
-        });
-        toggleCarouselButtons();
-      }
-    });
+//   // Handle right arrow button click
+//   category
+//     .querySelector(".carousel-button.right")
+//     .addEventListener("click", function () {
+//       if (scrollPosition < videoItems.length - 1) {
+//         scrollPosition++;
+//         videoCarousel.scrollTo({
+//           left: scrollPosition * itemWidth,
+//           behavior: "smooth",
+//         });
+//         toggleCarouselButtons();
+//       }
+//     });
 
-  // Initialize button visibility
-  toggleCarouselButtons();
-});
+//   // Initialize button visibility
+//   toggleCarouselButtons();
+// });
 
 /*phtoto carousal feature inspired from the following website: https: //www.codingnepalweb.com/responsive-image-slider-html-css-javascript/*/
 
