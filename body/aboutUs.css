@@ -1,0 +1,58 @@
+/* Style for the About Us section */
+#about-us {
+    text-align: center;  /*Center-align the content */
+    padding: 40px;
+    /* Add some padding for spacing */
+}
+
+.about-us h2 {
+    text-align: left;
+    font-size: 30px;
+}
+.Info {
+    text-align: center;
+}
+/* Style for the member frame */
+.member-frame {
+    margin: 20px;
+    /* Add margin to separate member frames */
+    display: inline-block;
+    /* Display member frames side by side */
+    text-align: center;
+    /* Center-align the content within member frame */
+}
+
+.member-frame img {
+    text-align: center;
+    width: 50px;
+    /* Set the image width */
+    height: 50px;
+    /* Set the image height */
+    border-radius: 50%;
+    /* Make the image round (assuming it's a profile picture) */
+    margin-bottom: 10px;
+    /* Add some spacing below the image */
+}
+
+.member-frame h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    /* Set the font size for member names */
+    margin: 5px 0;
+    /* Add some spacing around member names */
+}
+
+.member-frame p {
+    text-align: center;
+    margin: 0;
+    /* Remove default margin for paragraphs */
+}
+
+/* Style for the description */
+.description {
+    text-align: center;
+    max-width: 70%;
+    /* Set a maximum width for the description */
+    margin: 0 auto;
+    /* Center-align the description */
+}
