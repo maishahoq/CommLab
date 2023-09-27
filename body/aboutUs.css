@@ -24,9 +24,9 @@
 
 .member-frame img {
     text-align: center;
-    width: 50px;
+    width: 100px;
     /* Set the image width */
-    height: 50px;
+    height: 100px;
     /* Set the image height */
     border-radius: 50%;
     /* Make the image round (assuming it's a profile picture) */
@@ -73,8 +73,8 @@
 }
 
 .editor-frame img {
-    width: 100px; /* Adjust the image width as needed */
-    height: 100px; /* Adjust the image height as needed */
+    width: 60px; /* Adjust the image width as needed */
+    height: 60px; /* Adjust the image height as needed */
     border-radius: 50%;
     margin-bottom: 10px;
 }
