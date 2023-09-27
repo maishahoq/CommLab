@@ -1,3 +1,5 @@
+const searchInput = document.querySelector("[data-search]");
+
 // JavaScript to toggle the dropdown menu on click
 document
   .getElementById("categories-button")
@@ -20,29 +22,45 @@ window.addEventListener("click", function (event) {
 });
 
 //Search bar
+function searchWebpage() {
+  let input = document.getElementById("searchbar").value.toLowerCase();
+  let contentElements = document.querySelectorAll(".content");
 
-document.addEventListener("DOMContentLoaded", function () {
-  const searchInput = document.getElementById("search-input");
-  const searchButton = document.getElementById("search-button");
+  contentElements.forEach((element) => {
+    let contentText = element.textContent.toLowerCase();
+    let dataTitle = element.getAttribute("data-title");
 
-  searchButton.addEventListener("click", function () {
-    const searchTerm = searchInput.value.trim();
-
-    // Perform your search logic here (replace the alert with your actual search code)
-    if (searchTerm !== "") {
-      alert("Perform search with term: " + searchTerm);
+    if (
+      contentText.includes(input) ||
+      (dataTitle && dataTitle.toLowerCase().includes(input))
+    ) {
+      element.style.display = "block";
     } else {
-      alert("Please enter a search term.");
+      element.style.display = "none";
     }
   });
 
-  // Optionally, you can add support for pressing Enter to search
-  searchInput.addEventListener("keyup", function (event) {
-    if (event.key === "Enter") {
-      searchButton.click();
+  // Search for images with matching alt attributes
+  let images = document.querySelectorAll("img[alt]");
+  images.forEach((image) => {
+    if (image.alt.toLowerCase().includes(input)) {
+      image.style.display = "block";
+    } else {
+      image.style.display = "none";
     }
   });
-});
+
+  // Search for videos with matching titles
+  let videos = document.querySelectorAll("iframe[data-title]");
+  videos.forEach((video) => {
+    let videoTitle = video.getAttribute("data-title");
+    if (videoTitle.toLowerCase().includes(input)) {
+      video.style.display = "block";
+    } else {
+      video.style.display = "none";
+    }
+  });
+}
 
 /*phtoto carousal feature inspired from the following website: https: //www.codingnepalweb.com/responsive-image-slider-html-css-javascript/*/
 
