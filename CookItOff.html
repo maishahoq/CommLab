@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width2=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <title>Cook It Off</title>
     <!-- My CSS links here -->
     <!--<link rel="stylesheet" href="CommLab/style.css">-->
@@ -25,7 +27,7 @@
         </div>
         <div class="search-container">
             <input type="text" id="search-input" placeholder="Search...">
-            <button id="search-button">Search</button>
+            <button id="search-button" onclick=searchWebpage()>Search</button>    <!-- Clicking on search button should trigger the function, but it isn't why? -->
         </div>
 
         <nav>
@@ -113,18 +115,18 @@
                         <button id="prev-slide" class="slide-button material-symbols-rounded">
                             <- </button>
                                 <ul class="image-list">
-                                    <!-- Horizontal video list for Main Course -->
-                                    <iframe class="video-item" width="560" height="315"
+                                    <!-- Horizontal video list for Breakfast -->
+                                    <iframe class="video-item" width="560" height="315" data-title="Korean Breakfast"
                                         src="https://www.youtube.com/embed/fvuHXumNbus?rel=0" frameborder="0"
                                         allowfullscreen></iframe>
-                                    <iframe class="video-item" width="560" height="315"
+                                    <iframe class="video-item" width="560" height="315" data-title="Japanese Breakfast"
                                         src="https://www.youtube.com/embed/8PLiU2Iu6Oc?rel=0" frameborder="0"
                                         allowfullscreen></iframe>
-                                    <iframe class="video-item" width="560" height="315"
+                                    <iframe class="video-item" width="560" height="315" data-title="Yummy Easy Breakfast Ideas"
                                         src="https://www.youtube.com/embed/D_ZVX0e4gdg?rel=0" frameborder="0"
                                         allowfullscreen></iframe>
-                                    <iframe class="video-item" width="560" height="315"
-                                        src="https://www.youtube.com/embed/pwFDccjdW_M?si=G-BKfPUWI0d3malv"
+                                    <iframe class="video-item" width="560" height="315" data-title="Chirer Polao"
+                                        src="https://www.youtube.com/embed/pwFDccjdW_M?si=G-BKfPUWI0d3malv" 
                                         frameborder="0" allowfullscreen></iframe>
                                     <iframe class="video-item" width="560" height="315"
                                         src="https://www.youtube.com/embed/pwFDccjdW_M?si=G-BKfPUWI0d3malv"
@@ -158,19 +160,19 @@
                             <- </button>
                                 <ul class="image-list">
                                     <!-- Horizontal video list for Main Course -->
-                                    <iframe class="video-item" width="560" height="315"
+                                    <iframe class="video-item" width="560" height="315" data-title="Korean Easy Dinner"
                                         src="https://www.youtube.com/embed/lehiZMGu2yw?si=f_5-Ti0r_crydFqT"
                                         frameborder="0" allowfullscreen></iframe>
-                                    <iframe class="video-item" width="560" height="315"
+                                    <iframe class="video-item" width="560" height="315" data-title="15 minute Easy Dinner"
                                         src="https://www.youtube.com/embed/UIOW18kRDEA?si=t_NZfCK0-VaAL7cS"
                                         frameborder="0" allowfullscreen></iframe>
-                                    <iframe class="video-item" width="560" height="315"
+                                    <iframe class="video-item" width="560" height="315" data-title="Healthy Student Cooking"
                                         src="https://www.youtube.com/embed/aMDV2tfY9rM?si=8f1dXONnIb_mdN9m"
                                         frameborder="0" allowfullscreen></iframe>
-                                    <iframe class="video-item" width="560" height="315"
+                                    <iframe class="video-item" width="560" height="315" data-title="Japanese Easy Dinner"
                                         src="https://www.youtube.com/embed/WprwPtvNp0o?si=6qh7A_MM3YIL0aDq"
                                         frameborder="0" allowfullscreen></iframe>
-                                    <iframe class="video-item" width="560" height="315"
+                                    <iframe class="video-item" width="560" height="315" data-title="10 min recipes Gordon Ramsey"
                                         src="https://www.youtube.com/embed/Kes2fk-Nuwo?si=3N84OYFHY-0EaQfW"
                                         frameborder="0" allowfullscreen></iframe>
                                     <iframe class="video-item" width="560" height="315"
@@ -198,23 +200,23 @@
                         <button id="prev-slide" class="slide-button material-symbols-rounded">
                             <- </button>
                                 <ul class="image-list">
-                                    <!-- Horizontal video list for Main Course -->
-                                    <iframe class="video-item" width="560" height="315"
+                                    <!-- Horizontal video list for Savoury Snacks -->
+                                    <iframe class="video-item" width="560" height="315" data-title="Late Night Easy Snacks"
                                         src="https://www.youtube.com/embed/YO3y2M8AMsc?si=hvcWzj2soaP19zfA"
                                         frameborder="0" allowfullscreen></iframe>
-                                    <iframe class="video-item" width="560" height="315"
+                                    <iframe class="video-item" width="560" height="315" data-title="Snacks Under 10 mins"
                                         src="https://www.youtube.com/embed/EN5ScisdNmg?si=CS3EtKufwO-jcDM5"
                                         frameborder="0" allowfullscreen></iframe>
-                                    <iframe class="video-item" width="560" height="315"
+                                    <iframe class="video-item" width="560" height="315" data-title="Snacks Under 10 mins"
                                         src="https://www.youtube.com/embed/ZusYJm5xHkg?si=SXoa-_RnoYsqEUGe"
                                         frameborder="0" allowfullscreen></iframe>
-                                    <iframe class="video-item" width="560" height="315"
+                                    <iframe class="video-item" width="560" height="315" data-title="Quick Easy Appetizers"
                                         src="https://www.youtube.com/embed/lHOmgNapV78?si=aUnMeEqoYz17tqoY"
                                         frameborder="0" allowfullscreen></iframe>
-                                    <iframe class="video-item" width="560" height="315"
+                                    <iframe class="video-item" width="560" height="315" data-title="Snacks Under 10 mins"
                                         src="https://www.youtube.com/embed/1KUYof2EEmw?si=3fsqVqZt4mvXGT3-"
                                         frameborder="0" allowfullscreen></iframe>
-                                    <iframe class="video-item" width="560" height="315"
+                                    <iframe class="video-item" width="560" height="315" data-title="Healthy Snacks"
                                         src="https://www.youtube.com/embed/ITkNZ-Hssns?si=h7t_3IJi8vTCXABb"
                                         frameborder="0" allowfullscreen></iframe>
 
@@ -241,23 +243,23 @@
                         <button id="prev-slide" class="slide-button material-symbols-rounded">
                             <- </button>
                                 <ul class="image-list">
-                                    <!-- Horizontal video list for Main Course -->
-                                    <iframe class="video-item" width="560" height="315"
+                                    <!-- Horizontal video list for Dessert -->
+                                    <iframe class="video-item" width="560" height="315" data-title="3 ingredient desserts"
                                         src="https://www.youtube.com/embed/03_EDK9Sn_E?si=lrJPpWdoRJV73JER"
                                         frameborder="0" allowfullscreen></iframe>
-                                    <iframe class="video-item" width="560" height="315"
+                                    <iframe class="video-item" width="560" height="315" data-title="Easy desserts"
                                         src="https://www.youtube.com/embed/vtwX4aFMiK8?si=u9-ZkvbQ7T4TdQIh"
                                         frameborder="0" allowfullscreen></iframe>
-                                    <iframe class="video-item" width="560" height="315"
+                                    <iframe class="video-item" width="560" height="315"  data-title="3 ingredient sweet treats"
                                         src="https://www.youtube.com/embed/6GaRr_v4y9A?si=RP47Vu_vkl60ycGj"
                                         frameborder="0" allowfullscreen></iframe>
-                                    <iframe class="video-item" width="560" height="315"
+                                    <iframe class="video-item" width="560" height="315"  
                                         src="https://www.youtube.com/embed/dd2V1tsgdVc?si=XbHJbR-x1e3YTJIc"
                                         frameborder="0" allowfullscreen></iframe>
-                                    <iframe class="video-item" width="560" height="315"
+                                    <iframe class="video-item" width="560" height="315" data-title="no bake easy desserts"
                                         src="https://www.youtube.com/embed/plwFYzeCqFQ?si=7yzlfMvOprR9OWGd"
                                         frameborder="0" allowfullscreen></iframe>
-                                    <iframe class="video-item" width="560" height="315"
+                                    <iframe class="video-item" width="560" height="315" data-title=" desserts oat dates"
                                         src="https://www.youtube.com/embed/JwMmn8Z9exk?si=uVVr8siMko_3oHVr"
                                         frameborder="0" allowfullscreen></iframe>
 
